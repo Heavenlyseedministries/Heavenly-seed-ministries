@@ -45,3 +45,22 @@ text-decoration:none;
 font-weight:bold;
 border-radius:5px;
 }
+.programs{
+text-align:center;
+padding:60px 20px;
+}
+
+.program-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.program{
+background:white;
+padding:20px;
+width:220px;
+border-radius:8px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
