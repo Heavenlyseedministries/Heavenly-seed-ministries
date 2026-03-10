@@ -33,7 +33,10 @@ gap:20px;
 }
 
 .logo{
-width:150px;
+width:130px;
+height:auto;
+background:none;
+border-radius:10px;
 }
 
 .title{
