@@ -11,6 +11,11 @@ text-align:center;
 padding:120px 20px;
 }
 
+.logo{
+width:120px;
+margin-bottom:15px;
+}
+
 .hero h1{
 font-size:48px;
 margin-bottom:10px;
@@ -75,10 +80,13 @@ gap:20px;
 justify-content:center;
 }
 
-.gallery img{
+.img{
 width:220px;
 height:140px;
-object-fit:cover;
+background:#ddd;
+display:flex;
+align-items:center;
+justify-content:center;
 border-radius:8px;
 }
 
@@ -101,40 +109,4 @@ background:#111;
 color:white;
 text-align:center;
 padding:30px;
-}
-.logo{
-width:120px;
-margin-bottom:20px;
-}
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:12px 20px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-}
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:40px;
-}
-
-footer a{
-color:#27ae60;
-text-decoration:none;
-margin:5px;
-font-weight:bold;
-}
-.logo{
-width:120px;
-margin-bottom:20px;
-}
-.logo{
-width:120px;
-margin-bottom:10px;
 }
