@@ -75,13 +75,10 @@ gap:20px;
 justify-content:center;
 }
 
-.img{
+.gallery img{
 width:220px;
 height:140px;
-background:#ddd;
-display:flex;
-align-items:center;
-justify-content:center;
+object-fit:cover;
 border-radius:8px;
 }
 
