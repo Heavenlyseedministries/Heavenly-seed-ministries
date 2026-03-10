@@ -69,3 +69,19 @@ background:#f4f4f4;
 text-align:center;
 padding:50px;
 }
+.gallery{
+text-align:center;
+padding:60px;
+}
+
+.gallery-container{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.gallery img{
+width:250px;
+border-radius:10px;
+}
