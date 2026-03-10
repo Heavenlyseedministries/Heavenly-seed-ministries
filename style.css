@@ -85,3 +85,8 @@ flex-wrap:wrap;
 width:250px;
 border-radius:10px;
 }
+.about{
+text-align:center;
+padding:60px 20px;
+background:#ffffff;
+}
