@@ -5,20 +5,22 @@ background:#f4f4f4;
 }
 
 .hero{
-background:url('hero.jpg') center/cover no-repeat;
+background-image:url("hero.jpg");
+background-size:cover;
+background-position:center;
+padding:160px 60px;
 color:white;
-padding:120px 40px;
 position:relative;
 }
 
-.hero::before{
+.hero::after{
 content:"";
 position:absolute;
 top:0;
 left:0;
 right:0;
 bottom:0;
-background:rgba(0,0,0,0.45);
+background:rgba(0,0,0,0.4);
 }
 
 .hero *{
@@ -47,8 +49,9 @@ margin:0;
 }
 
 .verse{
-font-size:20px;
+font-size:24px;
 margin-top:20px;
+margin-left:10px;
 }
 
 .hero h1{
