@@ -19,7 +19,7 @@ color:white;
 display:flex;
 align-items:center;
 padding:10px 35px;
-background:rgba(0,0,0,0.30);
+background:transparent;
 }
 
 .logo{
@@ -37,7 +37,7 @@ letter-spacing:1px;
 /* NAVIGATION */
 
 .nav{
-background:rgba(0,0,0,0.30);
+background:transparent;
 text-align:center;
 padding:8px;
 }
@@ -183,4 +183,11 @@ font-size:28px;
 height:400px;
 }
 
+}
+.top-header h1{
+text-shadow:2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.nav a{
+text-shadow:1px 1px 4px rgba(0,0,0,0.7);
 }
