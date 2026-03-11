@@ -1,118 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Heavenly Seed Ministries</title>
-<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f5f5f5;
+}
+
+/* HEADER */
+
+header{
+background:rgba(0,0,0,0.6);
+color:white;
+padding:10px 40px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+position:absolute;
+width:100%;
+z-index:10;
+}
+
+.logo{
+display:flex;
+align-items:center;
+}
+
+.logo img{
+width:80px;
+margin-right:15px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#00ff90;
+}
+
+/* HERO SECTION */
+
+.hero{
+background:url("hero.jpg") center/cover no-repeat;
+height:500px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:50px;
+margin:10px;
+}
+
+.hero p{
+font-size:22px;
+font-style:italic;
+}
+
+.button{
+margin-top:20px;
+padding:12px 25px;
+background:#28a745;
+color:white;
+border:none;
+border-radius:5px;
+text-decoration:none;
+font-size:18px;
+}
+
+/* SECTION */
+
+.section{
+padding:60px 40px;
+text-align:center;
+}
+
+.section h2{
+font-size:32px;
+margin-bottom:30px;
+color:#2c6e49;
+}
+
+/* THREE COLUMNS */
+
+.columns{
+display:flex;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+width:300px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+border-radius:8px;
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.service{
+background:#e8f5e9;
+padding:20px;
+border-radius:8px;
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+border-radius:8px;
+}
+
+/* CONTACT */
+
+.contact{
+background:#2c6e49;
+color:white;
+padding:50px;
+text-align:center;
+}
+
+.contact p{
+font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+</style>
 </head>
 
 <body>
 
-<header class="hero">
+<header>
 
-<div class="header-top">
-
-<img src="logo.png" class="logo">
-
-<h1 class="title">Heavenly Seed Ministries</h1>
-
+<div class="logo">
+<img src="logo.png">
+<h2>Heavenly Seed Ministries</h2>
 </div>
 
-<p class="verse">"A farmer went out to sow his seed." — Luke 8:5</p>
-
-<a href="#donate" class="btn">Support the Ministry</a>
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#services">Ministry Programs</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
 
 </header>
 
 
-<nav>
-<a href="#about">About</a>
-<a href="#vision">Vision</a>
-<a href="#programs">Ministry Programs</a>
-<a href="#gallery">Gallery</a>
-<a href="#prayer">Prayer Request</a>
-<a href="#contact">Contact</a>
-</nav>
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Heavenly Seed Ministries</h1>
 
 
-<section class="three-columns">
+<a class="button">Support the Ministry</a>
 
-<div class="column">
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="section" id="about">
 
 <h2>About Us</h2>
 
-<img src="about.jpg" class="column-img">
-
-<p>
-Heavenly Seed Ministries is dedicated to serving the elderly, widows, and children in need with compassion and love. Our ministry helps communities through education, charity, and spiritual guidance.
-</p>
-
-<a href="#about" class="btn">Learn More</a>
-
-</div>
-
-<div class="column">
-
-<h2>Our Services</h2>
-
-<ul class="services">
-
-<li>Old Age Home Care</li>
-<li>Children Hostel</li>
-<li>Widow Support</li>
-<li>Medical Assistance</li>
-
-</ul>
-
-<a href="#programs" class="btn">Learn More</a>
-
-</div>
-
-<div class="column">
-
-<h2>Get Involved</h2>
-
-<img src="children.jpg" class="column-img">
-
-<p>
-Join us in making a difference. You can volunteer, donate, or partner with us to help those in need.
-</p>
-
-<a href="#contact" class="btn">Contact Us</a>
-
-</div>
-
-</section>
-
-<h2>About Heavenly Seed Ministries</h2>
-
-<p>
-Heavenly Seed Ministries is a Christian faith-based ministry dedicated to serving communities with love, compassion, and the message of Jesus Christ. Our mission is to care for elderly people, support widows, educate children, help tribal communities, and bring hope to families in need.
-</p>
-
-</section>
-
-
-<section id="vision">
-
-<h2>Vision & Mission</h2>
-
-<div class="cards">
+<div class="columns">
 
 <div class="card">
-<h3>Vision</h3>
+
+<img src="about.jpg">
+
 <p>
-To spread the love of Christ and transform communities through faith, compassion, and service.
+Heavenly Seed Ministries is dedicated to spreading the Word of God and serving communities with love and compassion.
 </p>
+
 </div>
 
+
 <div class="card">
-<h3>Mission</h3>
+
+<h3>Our Mission</h3>
+
 <p>
-To support vulnerable communities through education, food distribution, spiritual guidance, and compassionate care.
+
+• Preaching the Gospel  
+• Evangelism  
+• Charity Work  
+• Church Support  
+
 </p>
+
+</div>
+
+
+<div class="card">
+
+<img src="children.jpg">
+
+<p>
+We support poor families, provide education for tribal children, empower women, and distribute food and groceries to those in need.
+</p>
+
 </div>
 
 </div>
@@ -120,139 +252,65 @@ To support vulnerable communities through education, food distribution, spiritua
 </section>
 
 
-<section id="programs">
+<!-- SERVICES -->
 
-<h2>Ministry Programs</h2>
+<section class="section" id="services">
 
-<div class="cards">
+<h2>Our Ministry Programs</h2>
 
-<div class="card">
-<h3>Old Age Care</h3>
-<p>Providing love, care, and support for elderly people.</p>
-</div>
+<div class="services">
 
-<div class="card">
-<h3>Children Hostel</h3>
-<p>Providing safe housing and education support for children.</p>
-</div>
+<div class="service">Food Distribution</div>
 
-<div class="card">
-<h3>Education Support</h3>
-<p>Helping children and tribal communities receive education.</p>
-</div>
+<div class="service">Bible Training</div>
 
-<div class="card">
-<h3>Widow Support</h3>
-<p>Helping widows with financial and emotional support.</p>
-</div>
+<div class="service">Mission Work</div>
 
-<div class="card">
-<h3>Medical Assistance</h3>
-<p>Helping families with hospital bills and medical care.</p>
-</div>
-
-<div class="card">
-<h3>Food Distribution</h3>
-<p>Distributing rice bags and groceries to poor families.</p>
-</div>
-
-<div class="card">
-<h3>Women Empowerment</h3>
-<p>Encouraging women through education and development programs.</p>
-</div>
-
-<div class="card">
-<h3>Evangelism Outreach</h3>
-<p>Sharing the Good News of Jesus Christ in communities.</p>
-</div>
-
-<div class="card">
-<h3>Bible Training</h3>
-<p>Teaching biblical principles and spiritual growth.</p>
-</div>
-
-<div class="card">
-<h3>Mission Work</h3>
-<p>Serving rural and tribal communities through mission outreach.</p>
-</div>
-
-<div class="card">
-<h3>Church Support</h3>
-<p>Supporting local churches and ministry activities.</p>
-</div>
+<div class="service">Church Support</div>
 
 </div>
 
 </section>
 
 
-<section id="gallery">
+<!-- GALLERY -->
 
-<h2>Ministry Gallery</h2>
+<section class="section" id="gallery">
+
+<h2>Photo Gallery</h2>
 
 <div class="gallery">
 
-<div class="img">Ministry Photo</div>
-<div class="img">Community Outreach</div>
-<div class="img">Children Program</div>
-<div class="img">Prayer Meeting</div>
+<img src="charity.jpg">
+<img src="children.jpg">
+<img src="about.jpg">
+<img src="bible.jpg">
 
 </div>
 
 </section>
 
 
-<section id="donate">
+<!-- CONTACT -->
 
-<h2>Support the Ministry</h2>
-
-<p>Your donations help us serve the poor, care for the elderly, educate children, and spread the Gospel.</p>
-
-<button class="btn">Donate</button>
-
-</section>
-
-
-<section id="prayer">
-
-<h2>Prayer Request</h2>
-
-<form>
-
-<input type="text" placeholder="Your Name" required>
-
-<input type="email" placeholder="Your Email" required>
-
-<textarea placeholder="Write your prayer request"></textarea>
-
-<button type="submit" class="btn">Submit Prayer</button>
-
-</form>
-
-</section>
-
-
-<section id="contact">
+<section class="contact" id="contact">
 
 <h2>Contact Us</h2>
 
-<p>Email: heavenlyseedministries07@gmail.com</p>
-
 <p>Phone: +91 79892 51367</p>
 
-<p>Location: Andhra Pradesh, India</p>
+<p>Email: heavenlyseedministries07@gmail.com</p>
+
+<p>Heavenly Seed Ministries</p>
 
 </section>
 
 
 <footer>
 
-<p>© 2026 Heavenly Seed Ministries</p>
-
-<p>Serving with Faith, Love and Compassion</p>
+© 2026 Heavenly Seed Ministries
 
 </footer>
-
 
 </body>
 </html>
