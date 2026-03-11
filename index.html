@@ -5,147 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Heavenly Seed Ministries</title>
 
-<style>
-
-body{
-margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:#f5f5f5;
-}
-
-/* HEADER */
-
-.header{
-display:flex;
-align-items:center;
-padding:15px 40px;
-background:rgba(0,0,0,0.6);
-color:white;
-position:absolute;
-width:100%;
-z-index:10;
-}
-
-.header img{
-width:80px;
-margin-right:15px;
-}
-
-.header h1{
-margin:0;
-font-size:28px;
-}
-
-/* NAVBAR */
-
-.nav{
-background:#2e4d2c;
-padding:12px;
-text-align:center;
-}
-
-.nav a{
-color:white;
-text-decoration:none;
-margin:15px;
-font-weight:bold;
-}
-
-.nav a:hover{
-color:#90ee90;
-}
-
-/* HERO */
-
-.hero{
-background:url("hero.jpg") center/cover no-repeat;
-height:420px;
-}
-
-/* SECTION */
-
-.section{
-padding:50px;
-background:#f4f1e7;
-}
-
-.columns{
-display:flex;
-gap:30px;
-justify-content:center;
-flex-wrap:wrap;
-}
-
-.box{
-background:white;
-width:300px;
-padding:20px;
-border-radius:10px;
-text-align:center;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
-}
-
-.box img{
-width:100%;
-border-radius:6px;
-}
-
-button{
-margin-top:15px;
-padding:10px 20px;
-border:none;
-background:#2e6b3c;
-color:white;
-border-radius:5px;
-cursor:pointer;
-}
-
-/* SERVICES */
-
-.services{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:10px;
-margin-top:15px;
-}
-
-.service{
-background:#e8f3e6;
-padding:10px;
-border-radius:6px;
-}
-
-/* GALLERY */
-
-.gallery{
-background:#2e6b3c;
-padding:40px;
-text-align:center;
-color:white;
-}
-
-.gallery-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
-margin-top:20px;
-}
-
-.gallery-grid img{
-width:100%;
-border-radius:6px;
-}
-
-/* FOOTER */
-
-.footer{
-background:#111;
-color:white;
-text-align:center;
-padding:20px;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -153,38 +13,39 @@ padding:20px;
 
 <!-- HEADER -->
 
-<div class="header">
+<header class="header">
 
-<img src="logo.png">
+<div class="top-header">
+
+<img src="logo.png" class="logo">
 
 <h1>Heavenly Seed Ministries</h1>
 
 </div>
 
-
-<!-- NAVIGATION -->
-
-<div class="nav">
+<nav class="nav">
 
 <a href="#">Home</a>
-<a href="#about">About</a>
-<a href="#services">Ministry Programs</a>
-<a href="#gallery">Gallery</a>
-<a href="#contact">Contact</a>
+<a href="#">About Us</a>
+<a href="#">Our Services</a>
+<a href="#">Gallery</a>
+<a href="#">Contact</a>
 
-</div>
+</nav>
 
+</header>
 
-<!-- HERO BANNER (NO TEXT HERE) -->
+<!-- HERO BANNER -->
 
-<div class="hero"></div>
+<section class="hero"></section>
 
+<!-- ABOUT / SERVICES / INVOLVED -->
 
-<!-- ABOUT / SERVICES / GET INVOLVED -->
-
-<div class="section" id="about">
+<section class="section">
 
 <div class="columns">
+
+<!-- ABOUT -->
 
 <div class="box">
 
@@ -193,13 +54,15 @@ padding:20px;
 <img src="about.jpg">
 
 <p>
-Heavenly Seed Ministries is dedicated to caring for the elderly, widows, and children in need with compassion and love.
+Heavenly Seed Ministries is dedicated to caring for the elderly, widows and children in need with compassion and love.
 </p>
 
 <button>Learn More</button>
 
 </div>
 
+
+<!-- SERVICES -->
 
 <div class="box">
 
@@ -219,6 +82,8 @@ Heavenly Seed Ministries is dedicated to caring for the elderly, widows, and chi
 </div>
 
 
+<!-- GET INVOLVED -->
+
 <div class="box">
 
 <h2>Get Involved</h2>
@@ -235,12 +100,11 @@ Join us in making a difference. Volunteer, donate, or partner with us to help th
 
 </div>
 
-</div>
-
+</section>
 
 <!-- GALLERY -->
 
-<div class="gallery" id="gallery">
+<section class="gallery">
 
 <h2>Photo Gallery</h2>
 
@@ -253,21 +117,19 @@ Join us in making a difference. Volunteer, donate, or partner with us to help th
 
 </div>
 
-<button>View More</button>
+<button class="gallery-btn">View More</button>
 
-</div>
+</section>
 
+<!-- FOOTER -->
 
-<!-- CONTACT -->
+<footer class="footer">
 
-<div class="footer" id="contact">
+<p>Phone: +91 79892 51367</p>
 
-Phone: +91 79892 51367  
-<br><br>
-Email: heavenlyseedministries07@gmail.com
+<p>Email: heavenlyseedministries07@gmail.com</p>
 
-</div>
-
+</footer>
 
 </body>
 </html>
