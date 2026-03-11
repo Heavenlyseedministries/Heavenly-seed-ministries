@@ -16,8 +16,8 @@ color:white;
 .top-header{
 display:flex;
 align-items:center;
-padding:25px 50px;
-background:rgba(0,0,0,0.55);
+padding:10px 35px;
+background:rgba(0,0,0,0.35);
 }
 
 .logo{
@@ -35,9 +35,9 @@ letter-spacing:1px;
 /* NAVIGATION */
 
 .nav{
-background:rgba(0,0,0,0.6);
+background:rgba(0,0,0,0.35);
 text-align:center;
-padding:12px;
+padding:8px;
 }
 
 .nav a{
