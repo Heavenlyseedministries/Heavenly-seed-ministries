@@ -196,3 +196,38 @@ height:400px;
 }
 
 }
+.three-box{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:30px;
+max-width:1200px;
+margin:auto;
+padding:50px 20px;
+}
+
+.box{
+background:white;
+padding:25px;
+border-radius:8px;
+text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.about-img{
+width:100%;
+border-radius:6px;
+margin:15px 0;
+}
+
+.services{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+margin:20px 0;
+}
+
+.service{
+background:#dfe7df;
+padding:10px;
+border-radius:6px;
+}
