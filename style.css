@@ -19,7 +19,7 @@ color:white;
 display:flex;
 align-items:center;
 padding:10px 35px;
-background:rgba(0,0,0,0.0);
+background:rgba(0,0,0,0.30);
 }
 
 .logo{
@@ -37,7 +37,7 @@ letter-spacing:1px;
 /* NAVIGATION */
 
 .nav{
-background:rgba(0,0,0,0.35);
+background:rgba(0,0,0,0.15);
 text-align:center;
 padding:8px;
 }
