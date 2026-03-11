@@ -1,97 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Heavenly Seed Ministries</title>
 
 <style>
 
 body{
 margin:0;
-font-family:Arial, sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 background:#f5f5f5;
 }
 
 /* HEADER */
 
-header{
-background:rgba(0,0,0,0.6);
-color:white;
-padding:10px 40px;
+.header{
 display:flex;
 align-items:center;
-justify-content:space-between;
+padding:15px 40px;
+background:rgba(0,0,0,0.6);
+color:white;
 position:absolute;
 width:100%;
 z-index:10;
 }
 
-.logo{
-display:flex;
-align-items:center;
-}
-
-.logo img{
+.header img{
 width:80px;
 margin-right:15px;
 }
 
-nav a{
+.header h1{
+margin:0;
+font-size:28px;
+}
+
+/* NAVBAR */
+
+.nav{
+background:#2e4d2c;
+padding:12px;
+text-align:center;
+}
+
+.nav a{
 color:white;
 text-decoration:none;
-margin:0 15px;
+margin:15px;
 font-weight:bold;
 }
 
-nav a:hover{
-color:#00ff90;
+.nav a:hover{
+color:#90ee90;
 }
 
-/* HERO SECTION */
+/* HERO */
 
 .hero{
 background:url("hero.jpg") center/cover no-repeat;
-height:520px;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-color:white;
-}
-
-.hero p{
-font-size:32px;
-font-style:italic;
-}
-
-.button{
-margin-top:25px;
-padding:12px 25px;
-background:#28a745;
-color:white;
-border:none;
-border-radius:5px;
-text-decoration:none;
-font-size:18px;
+height:420px;
 }
 
 /* SECTION */
 
 .section{
-padding:60px 40px;
-text-align:center;
+padding:50px;
+background:#f4f1e7;
 }
-
-.section h2{
-font-size:32px;
-margin-bottom:30px;
-color:#2c6e49;
-}
-
-/* THREE COLUMNS */
 
 .columns{
 display:flex;
@@ -100,164 +76,175 @@ justify-content:center;
 flex-wrap:wrap;
 }
 
-.card{
+.box{
 background:white;
+width:300px;
 padding:20px;
 border-radius:10px;
-width:300px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+text-align:center;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
 
-.card img{
+.box img{
 width:100%;
-border-radius:8px;
+border-radius:6px;
+}
+
+button{
+margin-top:15px;
+padding:10px 20px;
+border:none;
+background:#2e6b3c;
+color:white;
+border-radius:5px;
+cursor:pointer;
 }
 
 /* SERVICES */
 
 .services{
 display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:20px;
+grid-template-columns:1fr 1fr;
+gap:10px;
+margin-top:15px;
 }
 
 .service{
-background:#e8f5e9;
-padding:20px;
-border-radius:8px;
+background:#e8f3e6;
+padding:10px;
+border-radius:6px;
 }
 
 /* GALLERY */
 
 .gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
-}
-
-.gallery img{
-width:100%;
-border-radius:8px;
-}
-
-/* CONTACT */
-
-.contact{
-background:#2c6e49;
-color:white;
-padding:50px;
+background:#2e6b3c;
+padding:40px;
 text-align:center;
+color:white;
 }
 
-.contact p{
-font-size:18px;
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+margin-top:20px;
+}
+
+.gallery-grid img{
+width:100%;
+border-radius:6px;
 }
 
 /* FOOTER */
 
-footer{
+.footer{
 background:#111;
 color:white;
 text-align:center;
-padding:15px;
+padding:20px;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<header>
+<!-- HEADER -->
 
-<div class="logo">
+<div class="header">
+
 <img src="logo.png">
-<h2>Heavenly Seed Ministries</h2>
+
+<h1>Heavenly Seed Ministries</h1>
+
 </div>
 
-<nav>
+
+<!-- NAVIGATION -->
+
+<div class="nav">
+
 <a href="#">Home</a>
 <a href="#about">About</a>
 <a href="#services">Ministry Programs</a>
 <a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
-</nav>
 
-</header>
-
-
-<!-- HERO -->
-
-<section class="hero">
-
-<p>“A farmer went out to sow his seed.” — Luke 8:5</p>
-
-<a class="button">Support the Ministry</a>
-
-</section>
+</div>
 
 
-<!-- ABOUT -->
+<!-- HERO BANNER (NO TEXT HERE) -->
 
-<section class="section" id="about">
+<div class="hero"></div>
 
-<h2>About Us</h2>
+
+<!-- ABOUT / SERVICES / GET INVOLVED -->
+
+<div class="section" id="about">
 
 <div class="columns">
 
-<div class="card">
+<div class="box">
+
+<h2>About Us</h2>
+
 <img src="about.jpg">
+
 <p>
-Heavenly Seed Ministries is dedicated to spreading the Word of God and serving communities with compassion and love.
+Heavenly Seed Ministries is dedicated to caring for the elderly, widows, and children in need with compassion and love.
 </p>
-</div>
 
-<div class="card">
-<h3>Our Mission</h3>
-<p>
-Preaching<br>
-Evangelism<br>
-Charity Work<br>
-Church Support
-</p>
-</div>
-
-<div class="card">
-<img src="children.jpg">
-<p>
-Helping poor families, supporting tribal children with education, empowering women, and distributing food and groceries.
-</p>
-</div>
+<button>Learn More</button>
 
 </div>
 
-</section>
 
+<div class="box">
 
-<!-- SERVICES -->
-
-<section class="section" id="services">
-
-<h2>Our Ministry Programs</h2>
+<h2>Our Services</h2>
 
 <div class="services">
 
-<div class="service">Food Distribution</div>
-<div class="service">Bible Training</div>
-<div class="service">Mission Work</div>
-<div class="service">Church Support</div>
+<div class="service">Old Age Home Care</div>
+<div class="service">Children's Hostel</div>
+<div class="service">Widow Support</div>
+<div class="service">Medical Assistance</div>
 
 </div>
 
-</section>
+<button>Learn More</button>
+
+</div>
+
+
+<div class="box">
+
+<h2>Get Involved</h2>
+
+<img src="children.jpg">
+
+<p>
+Join us in making a difference. Volunteer, donate, or partner with us to help those in need.
+</p>
+
+<button>Contact Us</button>
+
+</div>
+
+</div>
+
+</div>
 
 
 <!-- GALLERY -->
 
-<section class="section" id="gallery">
+<div class="gallery" id="gallery">
 
 <h2>Photo Gallery</h2>
 
-<div class="gallery">
+<div class="gallery-grid">
 
 <img src="charity.jpg">
 <img src="children.jpg">
@@ -266,27 +253,21 @@ Helping poor families, supporting tribal children with education, empowering wom
 
 </div>
 
-</section>
+<button>View More</button>
+
+</div>
 
 
 <!-- CONTACT -->
 
-<section class="contact" id="contact">
+<div class="footer" id="contact">
 
-<h2>Contact Us</h2>
+Phone: +91 79892 51367  
+<br><br>
+Email: heavenlyseedministries07@gmail.com
 
-<p>Phone: +91 79892 51367</p>
+</div>
 
-<p>Email: heavenlyseedministries07@gmail.com</p>
-
-</section>
-
-
-<footer>
-
-© 2026 Heavenly Seed Ministries
-
-</footer>
 
 </body>
 </html>
