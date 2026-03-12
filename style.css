@@ -7,16 +7,6 @@ background:#f5f5f5;
 
 /* HEADER */
 
-.top-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 40px;
-background:rgba(0,0,0,0.4);
-position:absolute;
-width:100%;
-top:0;
-}
 
 .logo-title{
 display:flex;
@@ -25,7 +15,17 @@ gap:15px;
 }
 
 .logo{
-width:70px;
+width:70px;.top-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(0,0,0,0.4);
+position:absolute;
+top:0;
+width:100%;
+box-sizing:border-box;
+}
 }
 
 .logo-title h1{
