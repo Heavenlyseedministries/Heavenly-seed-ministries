@@ -255,3 +255,27 @@ font-size:26px;
 margin:auto;
 margin-bottom:8px;
 }
+.services-page{
+padding:60px;
+background:#f5efe4;
+}
+
+.services-page h2{
+text-align:center;
+margin-bottom:40px;
+color:#2e7d32;
+}
+
+.service-item{
+background:white;
+padding:20px;
+margin:20px auto;
+max-width:700px;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.service-item h3{
+color:#2e7d32;
+margin-bottom:10px;
+}
