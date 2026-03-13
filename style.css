@@ -60,7 +60,7 @@ color:#ffd700;
 .hero{
 height:600px;
 background:
-linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
 url("banner.jpg");
 background-size:cover;
 background-position:center;
@@ -76,16 +76,19 @@ max-width:800px;
 }
 
 .quote{
-font-size:60px;
+font-size:64px;
 font-style:italic;
+color:#fff3d4;
+text-shadow:2px 2px 10px rgba(0,0,0,0.7);
 margin:0;
 }
 
 .reference{
-font-size:28px;
+font-size:30px;
 margin-top:15px;
+color:#ffe6a3;
+text-shadow:2px 2px 8px rgba(0,0,0,0.7);
 }
-
 /* SECTION AREA */
 
 .section-area{
